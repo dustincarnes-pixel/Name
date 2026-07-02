@@ -1,7 +1,7 @@
 body{
 
-    text-align: left;
-    border: 2px solid green
+    background: lightgreen;
+    margin: 0 auto;
 }
 
 nav{
@@ -11,7 +11,7 @@ nav{
 }
 nav ul{
     list-style: wavy
-    margin: 0;
+    margin 0
 }
 nav li{
     display : inline-block
@@ -31,34 +31,43 @@ nav a:hover{
 h1{
     color: blue;
     font-size: 50px;
-    font-background: red
+    font-weight: bold;
+    text-align: center; 
 
 }
 h2{
     color: rgb(123, 51, 51);
-
+    text-align: center;
 }
 h3{
     color: green;
+    text-align: center;
 }
 h4{
     color: indigo;
+    text-align: center;
 }
 h5{
     color: Navy;
+    text-align: center;
 }
 p{
     color: purple;
+    text-align: center;
 }
-.btn {
-    background:lightgreen;
-    
-
-
-    color: grey
-}
-body{
-    background-color: Purple
-    color: white;
+button {
+    background: black;
+    color: lightblue;
 }
 
+#header-image-container{
+    width: 100%; 
+    text-align: center; 
+    margin-top: 10px;
+}
+
+#header-image{
+    border-radius: 100%; 
+    width: 200px; 
+    height: 200px; 
+}
