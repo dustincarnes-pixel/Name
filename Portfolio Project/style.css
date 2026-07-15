@@ -147,6 +147,44 @@ button {
     top: 10px;
     right: 10px;
 }
+/* I got the info for all of this from https://www.w3schools.com/css/ */
+
+.work-section {
+    margin: 30px auto 0;
+    max-width: 1000px;
+}
+
+.work-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.work-card {
+    background: linear-gradient(135deg, #cfe8ff 0%, #e6d7ff 100%);
+    border-radius: 16px;
+    padding: 24px 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.work-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
+}
+
+.work-card h2 {
+    color: #2b3a55;
+    margin-bottom: 10px;
+}
+
+.work-card p {
+    color: #4a4a4a;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin: 8px 0;
+}
+
 /*Got the z-index and linear-gradient from https://stackoverflow.com/questions/24063807/css-z-index-with-gradient-background I saw the code and did more fishing to see what they do. */
 .floating-btn {
     position: fixed;
