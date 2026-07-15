@@ -1,55 +1,63 @@
 body{
-
     background: lightgreen;
     margin: 0 auto;
+    font-family: 'Satoshi', sans-serif;
+    text-align: center;
+    min-height: 100vh;
+    padding: 20px 15px 40px;
+    box-sizing: border-box;
 }
 
 nav{
     background-color: lightblue;
     padding: 15px 20px;
     text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 nav ul{
-    list-style: wavy
-    margin 0
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 nav li{
-    display : inline-block
+    display: inline-block;
 }
 nav a{
     color: black;
     text-decoration: none;
     padding: 10px 18px;
     border-radius: 6px;
-    border: 1px solid black 
+    border: 1px solid black;
+    margin: 0 5px;
 }
 nav a:hover{
     background-color: gold;
     font-weight: 700;
 }
 
+h1, h2, h3, h4, h5 {
+    margin: 0.2em 0;
+    padding: 0;
+    text-align: center;
+}
+
 h1{
     color: blue;
     font-size: 50px;
     font-weight: bold;
-    text-align: center; 
-
 }
 h2{
     color: rgb(123, 51, 51);
-    text-align: center;
 }
 h3{
     color: green;
-    text-align: center;
 }
 h4{
     color: indigo;
-    text-align: center;
 }
 h5{
     color: Navy;
-    text-align: center;
 }
 p{
     color: purple;
@@ -58,6 +66,55 @@ p{
 button {
     background: black;
     color: lightblue;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.skills-section {
+    margin: 30px auto 0;
+    max-width: 800px;
+}
+
+.skills-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.skill-card {
+    background: white;
+    border-radius: 16px;
+    padding: 24px 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
+}
+
+.skill-card h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    color: #4a5568;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.skill-card.highlight {
+    background: linear-gradient(135deg, #5b7cff, #8d6bff);
+    color: white;
+}
+
+.skill-card.highlight h2,
+.skill-card.highlight p {
+    color: white;
 }
 
 #header-image-container{
@@ -70,4 +127,10 @@ button {
     border-radius: 100%; 
     width: 200px; 
     height: 200px; 
+}
+
+#colorBtn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
 }
