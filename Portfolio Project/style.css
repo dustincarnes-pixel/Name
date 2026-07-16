@@ -130,16 +130,14 @@ footer {
 }
 /*Got the z-index and linear-gradient from https://stackoverflow.com/questions/24063807/css-z-index-with-gradient-background I saw the code and did more fishing to see what they do. */
 .cashapp-btn {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    z-index: 1000;
+    display: inline-block;
     background: linear-gradient(135deg, #1f9f6e, #2dc4a4);
     color: white;
     padding: 10px 16px;
     border-radius: 999px;
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
     font-weight: 600;
+    text-decoration: none;
 }
 
 .skills-section {

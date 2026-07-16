@@ -7,22 +7,21 @@ if (colorBtn) {
     colorBtn.addEventListener("click", () => {
         document.body.classList.toggle("dark");
         colorBtn.textContent = document.body.classList.contains("dark")
-            ? "☀️ Light Mode"
-            : "🌙 Dark Mode";
+            ? "Light Mode"
+            : "Dark Mode";
     });
 }
 
 if (hiBtn) {
     hiBtn.addEventListener("click", () => {
-        alert("Thanks for stopping by!");
+        alert("Hi there! Thanks for being here! ");
     });
 }
-
+// Every thing below gotten from: https://www.w3schools.com/js/default.asp //
 const tagline = document.getElementById("tagline");
 
 if (tagline) {
-    // Types out a short tagline one character at a time on the homepage.
-    const text = "I build thoughtful digital experiences.";
+    const text = "I created a wonderful portfolio.";
     let index = 0;
 
     function typeTagline() {
